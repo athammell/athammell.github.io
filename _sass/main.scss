@@ -1,3 +1,15 @@
-.current {
-  color: green;
+body {
+  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serifl;
+}
+
+a {
+  &:visited {
+    color: inherit;
+  }
+}
+
+.default {
+  color: #333;
+  margin: 0;
+  background-color: white;
 }

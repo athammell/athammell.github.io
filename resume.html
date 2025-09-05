@@ -1,0 +1,47 @@
+---
+layout: resume
+---
+
+<h1 class="name">Anson T. Hammell</h1>
+<div>
+  <h1 class="title">Web Developer</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p class="contacts">CONTACT BUTTONS</p>
+</div>
+<div>
+  <h1>Experience</h1>
+  <!-- Experience Listing, change to dynamic -->
+  {% for job in site.data.experience %}
+  <h3>{{ job.company }}</h3>
+  <h4>{{ job.position }} | {{ job.duration }}</h4>
+  <p class="resume-item-copy">{{ job.summary }}</p>
+  {%endfor%}
+</div>
+<div>
+  <div>
+    <h1>Education</h1>
+    {% for education in site.data.education %}
+    <h3>{{ education.diploma }}</h3>
+    <h5>{{ education.location }} | {{ education.duration }}</h5>
+    {%endfor%}
+  </div>
+  <div>
+    <h1>Skills</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+  </div>
+</div>

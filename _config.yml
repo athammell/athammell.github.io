@@ -1,13 +1,37 @@
-collections:
-  authors:
-    output: true
+# Exclusions
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .sass-cache
+
+# Site Settings
+locale: "en-CA"
+site_theme: "default"
+title: "Anson Hammell"
+name: &name "Anson"
+dessciption: &description "Resume for Anson Hammell"
+url: https://athammell.github.io
+baseurl: ""
+repository: "athammell/athammell.github.io"
+
+# Site Author & Persons Information
+author:
+  avatar: ""
+  name: "Anson Hammell"
+  pronouns: "he/him"
+  bio: ""
+  location: ""
+  #employer: ""
+  email: "anson.hammell@outlook.com"
+
+  # Socials
+  github: "athammell"
+
+# Site Settings
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"

@@ -5,7 +5,11 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
-  <body>
+  <body class="default">
+    <!-- Firefox FOUC Prevention  -->
+    <script>
+      0;
+    </script>
     {% include navigation.html %} {{ content }}
   </body>
 </html>

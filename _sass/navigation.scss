@@ -1,0 +1,42 @@
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25%;
+  padding-left: 25%;
+  max-width: 75%;
+  color: #c0c0c0;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e7e7e7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 7px 21px 7px 21px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:hover {
+  background-color: darkgrey;
+}
+
+.current {
+  color: black !important;
+  background-color: darkgrey;
+  border-color: black;
+}
