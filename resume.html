@@ -2,46 +2,48 @@
 layout: resume
 ---
 
-<h1 class="name">Anson T. Hammell</h1>
 <div>
-  <h1 class="title">Web Developer</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <h1 class="resume-name">{{ site.resume_name }}</h1>
+  <p class="resume-contacts"> Markham, Ontario | 437-566-4086 | anson.hammell@outlook.com</p>
+  <h1 class="resume-title">{{ site.resume_title }}</h1>
+  <p class="resume-excerpt">
+    Creative Front-End Developer with experience designing solutions to customer problems. Brings forward skills with several programming languages with the goal of pushing forward projects and expanding knowledge.
   </p>
-  <p class="contacts">CONTACT BUTTONS</p>
+  <!-- Social Icons -->
+  <ul class="resume-socials-list">
+    <!-- Make DYNAMIC -->
+    {% for social in site.data.social-media %}
+    <li class="resume-socials-item">
+      <a href="{{ social.href }}{{ social.id }}"
+        ><i class="fa {{ social.fa-icon }} resume-socials-icon"></i
+      ></a>
+    </li>
+    {%endfor%}
+  </ul>
 </div>
 <div>
-  <h1>Experience</h1>
+  <h1 class="resume-title">Experience</h1>
   <!-- Experience Listing, change to dynamic -->
   {% for job in site.data.experience %}
-  <h3>{{ job.company }}</h3>
-  <h4>{{ job.position }} | {{ job.duration }}</h4>
-  <p class="resume-item-copy">{{ job.summary }}</p>
+  <h2 class="resume-company">{{ job.company }}</h2>
+  <h3 class="resume-position">{{ job.position }} | {{ job.duration }}</h3>
+  <p class="resume-summary">{{ job.summary }}</p>
+  <a>{{ job.project-link }}</p>
   {%endfor%}
 </div>
 <div>
   <div>
-    <h1>Education</h1>
+    <h1 class="resume-title">Education</h1>
     {% for education in site.data.education %}
-    <h3>{{ education.diploma }}</h3>
-    <h5>{{ education.location }} | {{ education.duration }}</h5>
+    <h2 class="resume-diploma">{{ education.diploma }}</h2>
+    <p class="resume-school">{{ education.location }} | {{ education.duration }}</p>
     {%endfor%}
   </div>
   <div>
-    <h1>Skills</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
+    <h1 class="resume-title">Skills</h1>
+    {% for skill in site.data.skills %}
+    <h2 class="resume-diploma">{{ skill.skill }}</h2>
+    <p class="resume-school"> {{ skill.summary }}</p>
+    {% endfor %}
   </div>
 </div>

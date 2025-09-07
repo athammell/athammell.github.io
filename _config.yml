@@ -10,27 +10,22 @@ exclude:
 locale: "en-CA"
 site_theme: "default"
 title: "Anson Hammell"
-name: &name "Anson"
-dessciption: &description "Resume for Anson Hammell"
+name: "Anson"
+dessciption: "Resume for Anson Hammell"
 url: https://athammell.github.io
 baseurl: ""
 repository: "athammell/athammell.github.io"
 
 # Site Author & Persons Information
-author:
-  avatar: ""
-  name: "Anson Hammell"
-  pronouns: "he/him"
-  bio: ""
-  location: ""
-  #employer: ""
-  email: "anson.hammell@outlook.com"
+resume_name: "Anson T. Hammell"
+resume_title: "Front End Web Devloper"
+resume_contact_email: "anson.hammell@outlook.com"
+resume_contact_telephone: ""
 
-  # Socials
-  github: "athammell"
+# Socials
+resume_github: "https://github.com/athammell"
 
 # Site Settings
-
 defaults:
   - scope:
       path: ""

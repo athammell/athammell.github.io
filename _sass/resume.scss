@@ -1,27 +1,94 @@
-.resume {
-  max-width: 728px;
-  padding: 0 24px;
-  margin: 0 auto;
-  zoom: 1;
-  background-color: white;
+.resume,
+.resume-name,
+.resume-excerpt,
+.resume-title,
+.resume-company,
+.resume-position,
+.resume-summary,
+.resume-diploma,
+.resume-school,
+.resume-contact {
+  margin: 12px auto 12px;
 }
 
-.name {
+.resume {
+  max-width: 728px;
+  margin: 24px auto;
+  padding: 0 12px;
+  background-color: $white;
+}
+
+.resume-name {
+  margin: 7px auto;
   text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
+
+  font-family: $header-font;
   font-size: 3rem;
   font-weight: 700;
 }
 
-.title {
-  text-align: center;
-  padding: 0.5rem 0 0.5rem 0;
-  border-top: 2px solid #c0c0c0;
-  border-bottom: 3px solid #c0c0c0;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
+.resume-contact {
 }
 
-.contacts {
+.resume-title {
+  padding: 0.5rem 0 0.5rem 0;
+
+  border-top: 2px solid #c0c0c0;
+  border-bottom: 3px solid #c0c0c0;
+
+  text-align: center;
+
+  font-family: $header-font;
+  font-size: 1.75rem;
+  font-weight: 50;
+}
+
+.resume-company {
+  margin: 7px auto auto auto;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resume-position {
+  margin: auto auto auto auto;
+}
+
+.resume-excerpt {
+}
+
+.resume-socials-list {
+  margin: 12px auto 12px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.resume-socials-item {
+  display: inline;
+}
+
+.resume-diploma {
+  margin: auto auto auto auto;
+}
+
+.resume-school {
+  margin: auto auto 7px auto;
+}
+
+.fa {
+  color: darkgray;
+  font-size: 2.5rem;
+}
+
+.resume-socials-icon:hover {
+  color: $black;
+}
+
+.resume-project-list {
+  list-style: none;
+}
+
+.resume-contacts {
   text-align: center;
 }
