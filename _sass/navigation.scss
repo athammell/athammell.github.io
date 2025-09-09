@@ -1,14 +1,22 @@
 .top-nav-container {
+  position: fixed;
+  top: 0px;
   background-color: $navbar_background;
+  z-index: 999;
+  margin-left: auto;
+  width: 100%;
+  border-bottom: $navbar_border solid;
 }
 .top-nav-bar {
-  margin: auto;
-
-  max-width: 728px;
+  padding: 1rem 12rem;
+  width: 100%;
   color: $navbar_font_color;
-  background-color: $navbar_background;
-  border-bottom: 2px solid $navbar_border;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.top-nav-link {
+  padding: 0.3rem 0.6rem;
+  margin: 0.6rem;
 }
 
 .top-nav-bar .top-nav-list {
@@ -25,8 +33,6 @@
 .top-nav-bar .top-nav-list .top-nav-item .top-nav-link {
   display: block;
   text-align: center;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  margin: 1rem;
   text-decoration: none;
   border-radius: 0.5rem;
 }

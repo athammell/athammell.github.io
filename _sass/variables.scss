@@ -4,14 +4,17 @@
 $white: #fff;
 $black: #333;
 
+$background-color: #e7e7e7;
+
 // Fonts
 $default-font: Helvetica, Tahoma, sans-serif !default;
 $header-font: Tahoma, sans-serif;
 $body-font: Georgia, serif;
 
 // Navigation
-$navbar_background: #ebebeb;
-$navbar_border: #e7e7e7;
+$navbar_background: rgb(240, 240, 240);
+$navbar_border: rgb(230, 230, 230);
 $navbar_font_color: #636363;
+$navigation_size: 80px;
 
 // Resume

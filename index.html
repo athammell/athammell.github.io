@@ -3,4 +3,30 @@ permalink: /
 title: Home
 ---
 
-<h1>Latest Posts</h1>
+<div class="home-container">
+<section class="hero-wrap">
+  <div class="hero-portrait-wrap">
+    <img src="assets/images/Untitled.png" class="hero-portrait column slide-fade-h1"></img>
+  </div>
+  <div class="hero-information column">
+    <h1 class="hero-information-h1 slide-fade-h1">Hiya</h1>
+    <h2 class="hero-information-h2 slide-fade-h1">I'm Anson Hammell</h2>
+    <h3 class="hero-information-h3 slide-fade-h1">Front End Web Developer with a focus on creative solutions, looking to learn, create and succeed!</h3>
+  <ul class="hero-socials-list">
+    {% for social in site.data.social-media %}
+    <li class="hero-socials-item slide-fade-h1">
+      <a href="{{ social.href }}{{ social.id }}"
+        ><i class="fa {{ social.fa-icon }} hero-socials-icon"></i
+      ></a>
+    </li>
+    {%endfor%}
+  </ul>
+    <div class="about-me-button-wrap ">
+      <div class="about-me-button slide-fade-h1">
+        <a href="/about" class="about-me-link slide-fade-h1"> About me </a>
+      </div>
+    </div>
+  </div>
+</section>  
+  <div class="home-information">HI HEIFHIGLH HI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLH</div>   
+</div>

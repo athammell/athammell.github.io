@@ -1,0 +1,115 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+.slide-fade-h1 {
+  position: relative;
+  animation-name: slide-fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.home-information,
+.hero-wrap {
+  padding: 7rem 14rem 5rem;
+}
+
+.home-container {
+}
+
+.hero-wrap {
+  overflow: hidden;
+  background: #020024;
+  background: linear-gradient(
+    180deg,
+    rgb(13, 0, 71) 0%,
+    rgb(105, 14, 105) 50%,
+    rgb(160, 24, 81) 100%
+  );
+}
+
+.hero-portrait {
+  width: 600px;
+  height: 600px;
+
+  border-radius: 100%;
+  position: relative;
+}
+
+.hero-information {
+  padding-left: 4rem;
+  margin: auto;
+  color: $white;
+}
+
+.hero-information-h1,
+.hero-information-h2,
+.hero-information-h3 {
+}
+.hero-information-h1 {
+  font-size: 8rem;
+}
+
+.hero-information-h2 {
+  font-size: 4.5rem;
+}
+
+.hero-information-h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.hero-socials-list {
+  margin: 12px auto 12px;
+  list-style: none;
+}
+
+.hero-socials-item {
+  display: inline;
+}
+
+.hero-socials-icon {
+  color: $white;
+  font-size: 3.5rem;
+}
+
+.hero-socials-icon:hover {
+  color: darkgrey;
+}
+
+.about-me-button-wrap {
+  position: relative;
+  padding-bottom: 1rem;
+  display: inline;
+  top: 8rem;
+}
+
+.about-me-button {
+}
+
+.about-me-link {
+  padding: 1rem;
+  border: $white solid;
+  max-width: fit-content;
+  background-color: transparent;
+  text-decoration: none;
+
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.about-me-link:hover {
+  background-color: darkgray;
+}
