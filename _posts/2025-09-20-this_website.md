@@ -12,3 +12,7 @@ The creativeness of websites being made by people of different skill levels was 
 As for what I've gained from this little project was mostly learning about how to stylize a website to be friendly, a reminder of how to use CSS, HTML, and JS properly.
 
 So for now I'm leaving pictures this website in it's current state of writing this for future reference to see how it evolves!
+
+<img src="/assets/images/posts/home0.png" width="100%">
+<img src="/assets/images/posts/home1.png" width="100%">
+<img src="/assets/images/posts/home2.png" width="100%">
