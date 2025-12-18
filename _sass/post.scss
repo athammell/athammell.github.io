@@ -1,0 +1,29 @@
+.post-container {
+  padding: 0px 14vw 5rem;
+}
+
+.post-title {
+  font-size: 4.25rem;
+}
+.post-title-wrap {
+  padding: 16rem 0px 0px;
+  border-bottom: 2px rgb(212, 212, 212) solid;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.post-header {
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: inherit;
+
+  margin-bottom: 0.5rem;
+}
+
+.post-description {
+  object-fit: cover;
+  width: 100%;
+}

@@ -6,12 +6,12 @@ title: Home
 <div class="home-container">
 <section class="hero-wrap">
   <div class="hero-portrait-wrap">
-    <img src="assets/images/Untitled.png" class="hero-portrait column slide-fade-h1"></img>
+    <img src="assets/images/Untitled.png" alt="Hero Image"class="hero-portrait column slide-fade-h1"></img>
   </div>
   <div class="hero-information column">
-    <h1 class="hero-information-h1 slide-fade-h1">Hiya</h1>
+    <h1 class="hero-information-h1 slide-fade-h1">Hiya!</h1>
     <h2 class="hero-information-h2 slide-fade-h1">I'm Anson Hammell</h2>
-    <h3 class="hero-information-h3 slide-fade-h1">Front End Web Developer with a focus on creative solutions, looking to learn, create and succeed. Let's build together towards a better future!</h3>
+    <h3 class="hero-information-h3 slide-fade-h1">Developer with a focus on creative solutions, looking to learn, create and succeed. Let's build together towards a better future!</h3>
   <ul class="hero-socials-list">
     {% for social in site.data.social-media %}
     <li class="hero-socials-item slide-fade-h1">
@@ -27,6 +27,46 @@ title: Home
       </div>
     </div>
   </div>
-</section>  
-  <div class="home-information">HI HEIFHIGLH HI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLHHI HEIFHIGLH</div>   
+</section> 
+<div class="home-information-wrap">
+  <div class="home-information column">
+    <div class="home-excerpt">
+      Developer looking to build impactful user-friendly applications and websites. Passionate about finding new technologies to solve problems and create new solutions.
+    </div>
+  </div>
+  <div class="home-skills column">
+    <h1 class="home-skills-header">
+        Technical Skills
+    </h1>
+    <ul class="home-skills-list">
+      {% for skill in site.data.skills %}
+        <li class="home-skills-item">
+            <p> {{ skill.summary }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- 
+<div class="home-card-container">
+  <div class="home-card column-third">
+      <img src="/assets/images/Untitled.png" alt="" class="home-card-img">
+    <p>Architect & Engineer</p> 
+  </div>
+     
+  <div class="home-card column-third">
+      <img src="/assets/images/Untitled.png" alt="" class="home-card-img">
+    <p>Architect & Engineer</p> 
+  </div>
+     
+  <div class="home-card column-third">
+      <img src="/assets/images/Untitled.png" alt="" class="home-card-img">
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+    <div class="home-information-wrap-2">
+        Work in Progress! More to come. 
+    </div>
+-->
 </div>

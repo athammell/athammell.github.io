@@ -1,0 +1,39 @@
+.left {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+.about-container {
+  padding: 2.5rem 14vw 5rem;
+  overflow: hidden;
+}
+
+.about-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-info-excerpt {
+  padding-bottom: 1rem;
+}
+
+.about-image {
+  max-width: 600px;
+  position: relative;
+}
+
+.about-header {
+  font-size: 4.25rem;
+  margin-bottom: 0.5rem;
+  color: $black;
+
+  text-underline-offset: 0.08em;
+}

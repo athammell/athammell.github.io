@@ -1,0 +1,17 @@
+<div class="footer-container">
+  <div class="footer-wrapper">
+    <ul class="footer-socials-list">
+      {% for social in site.data.social-media %}
+      <li class="footer-socials-item">
+        <a href="{{ social.href }}{{ social.id }}"
+          ><i class="fa {{ social.fa-icon }} footer-socials-icon"></i
+        ></a>
+      </li>
+      {%endfor%}
+    </ul>
+  </div>
+  <div class="true-footer-wrap">
+    <div class="true-footer left">Handcrafted by Anson Hammell</div>
+    <div class="true-footer right">Powered by Jekyll</div>
+  </div>
+</div>

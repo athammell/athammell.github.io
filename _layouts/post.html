@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="post-container slide-fade-h1">
+  <div class="post-title-wrap" style="background-image: url({{ page.image }})">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h2 class="post-header">{{ page.header }}</h2>
+  </div>
 
-<p>
-  {{ page.date | date_to_string }} {% assign author = site.authors | where:
-  'short_name', page.author | first %} {% if author %} -
-  <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
-
-{{ content }}
+  <div class="post-description">{{ content }}</div>
+  <img />
+</div>

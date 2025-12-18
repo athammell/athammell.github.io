@@ -3,40 +3,86 @@
   width: 50%;
 }
 
-.slide-fade-h1 {
-  position: relative;
-  animation-name: slide-fade;
-  animation-duration: 0.5s;
+.column-third {
+  float: left;
+  width: 33.33%;
 }
 
-@keyframes slide-fade {
-  0% {
-    opacity: 0;
-    top: 50px;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+.home-information {
+  width: 44%;
+  padding-right: 5%;
+  border-right: darkgray solid;
+  border-width: 1%;
 }
 
-.home-information,
-.hero-wrap {
-  padding: 7rem 14rem 5rem;
+.home-skills {
+  padding-left: 5%;
+  float: left;
+  width: 45%;
 }
 
-.home-container {
+.home-skills:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home-skills-list {
+  list-style: none;
+  font-size: 1.75rem;
+  margin-left: 1rem;
+}
+
+.home-skills-item {
+  margin: 0;
+}
+
+.home-skills-header {
+  font-size: 2rem;
+  font-weight: 50;
+  margin: 0 0 0.5rem;
+}
+
+.home-information-wrap {
+  font-size: 2rem;
+}
+
+.home-information-wrap-2 {
+  font-size: 2rem;
+  background-color: rgb(8, 0, 40);
+  color: $white;
+  text-align: center;
+}
+
+.home-information-wrap::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home-information-wrap,
+.hero-wrap,
+.home-information-wrap-2,
+.home-card-container {
+  padding: 5rem 14vw 5rem;
 }
 
 .hero-wrap {
   overflow: hidden;
   background: #020024;
   background: linear-gradient(
-    180deg,
+    0deg,
     rgb(13, 0, 71) 0%,
     rgb(105, 14, 105) 50%,
-    rgb(160, 24, 81) 100%
+    rgb(190, 41, 103) 100%
   );
+  padding-bottom: 12rem;
+}
+
+.hero-wrap::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hero-portrait {
@@ -53,10 +99,6 @@
   color: $white;
 }
 
-.hero-information-h1,
-.hero-information-h2,
-.hero-information-h3 {
-}
 .hero-information-h1 {
   font-size: 8rem;
 }
@@ -93,10 +135,7 @@
   position: relative;
   padding-bottom: 1rem;
   display: inline;
-  top: 8rem;
-}
-
-.about-me-button {
+  top: 7rem;
 }
 
 .about-me-link {
@@ -111,5 +150,5 @@
 }
 
 .about-me-link:hover {
-  background-color: darkgray;
+  background-color: rgba(255, 255, 255, 0.075) !important;
 }

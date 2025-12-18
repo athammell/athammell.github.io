@@ -1,0 +1,55 @@
+.footer-container {
+  overflow: hidden;
+  background-color: $navbar_background;
+  border-top: $navbar_border solid;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-wrapper {
+  position: relative;
+  margin: 2.5rem 14vw 0px;
+}
+
+.left {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+.true-footer-wrap {
+  border-top: $black solid;
+  margin: 0px 14vw;
+}
+
+.true-footer {
+  color: $black;
+  padding: 0.5rem 0px;
+}
+
+.-socials-list {
+  margin: 12px auto 12px;
+  list-style: none;
+}
+
+.footer-socials-item {
+  display: inline;
+}
+
+.footer-socials-icon {
+  color: $black;
+  font-size: 3.5rem;
+}
+
+.footer-socials-icon:hover {
+  color: black;
+}

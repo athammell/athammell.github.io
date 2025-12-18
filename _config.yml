@@ -11,7 +11,7 @@ locale: "en-CA"
 site_theme: "default"
 title: "Anson Hammell"
 name: "Anson"
-dessciption: "Resume for Anson Hammell"
+description: "Resume for Anson Hammell"
 url: https://athammell.github.io
 baseurl: ""
 repository: "athammell/athammell.github.io"
@@ -36,3 +36,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Missing Images
+image_null: "/assets/images/missing_image.png"
